@@ -1,22 +1,22 @@
 <center>Experiment0</center>
 <h4> Experiment 0</h4>
 
-How to show database?
+### How to show database?
 ~~~sql
 SHOW DATABASES;
 ~~~
 
-How to create database?
+### How to create database?
 ~~~sql
 CREATE DATABASE COMPANY_ANKITA;
 ~~~
 
-How to use database?
+### How to use database?
 ~~~sql
 USE COMPANY_ANKITA;
 ~~~
 
-How to create table?
+### How to create table?
 ~~~sql
 CREATE TABLE DEPARTMENT(
     DEPTNO INT(2) PRIMARY KEY,
@@ -24,12 +24,12 @@ CREATE TABLE DEPARTMENT(
 );
 ~~~
 
-How to describe a department?
+### How to describe a department?
 ~~~sql
 DESC DEPARTMENT;
 ~~~
 
-How to create a table employee?
+### How to create a table employee?
 ~~~sql
 CREATE TABLE EMPLOYEE(
     EMPNO INT(4) PRIMARY KEY,
@@ -46,17 +46,17 @@ CREATE TABLE EMPLOYEE(
 );
 ~~~
 
-How to describe employee?
+### How to describe employee?
 ~~~sql
 DESC EMPLOYEE;
 ~~~
 
-How to show tables?
+### How to show tables?
 ~~~sql
 SHOW TABLES;
 ~~~
 
-How to insert value?
+### How to insert value?
 ~~~sql
 INSERT INTO DEPARTMENT VALUES(10,"RESEARCH"),
 (20,"ACCOUNTING"),
@@ -64,12 +64,12 @@ INSERT INTO DEPARTMENT VALUES(10,"RESEARCH"),
 (40,"OPERATIONS");
 ~~~
 
-How to display all records?
+### How to display all records?
 ~~~sql
 SELECT * FROM DEPARTMENT;
 ~~~
 
-How to insert value into employee table?
+### How to insert value into employee table?
 ~~~sql
 INSERT INTO EMPLOYEE VALUES
     -> (7369,'SMITH','CLERK',7902,'1980-12-17',800,NULL,20),
@@ -88,7 +88,7 @@ INSERT INTO EMPLOYEE VALUES
     -> (7934,'MILLER','CLERK',7782,'1982-01-23',1300,NULL,10);
 ~~~
 
-How to display all records?
+### How to display all records?
 ~~~sql
 SELECT * FROM EMPLOYEE;
 ~~~

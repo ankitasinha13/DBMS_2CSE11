@@ -2,7 +2,7 @@
 <h2>Experiment 4</h2>
 <h4>Queries:</h4>
 
-1.Display the list of employees who have joined the company before
+### 1.Display the list of employees who have joined the company before.
 30th june 80 or after 31st Dec 81.
 ~~~sql
 SELECT ENAME,HIREDATE
@@ -11,7 +11,7 @@ WHERE HIREDATE < '1980-06-30'
 OR HIREDATE > '1981-12-31';
 ~~~
 
-2.Display the names of employees whose have second alphabet A in
+### 2.Display the names of employees whose have second alphabet A in.
 their names.
 ~~~sql
 SELECT ENAME
@@ -19,15 +19,14 @@ FROM EMPLOYEE
 WHERE SUBSTRING(ENAME,2,1) ='A';
 ~~~
 
-3.Display the names of employees whose name is exactly five
-characters in length.
+### 3.Display the names of employees whose name is exactly five characters in length.
 ~~~sql
 SELECT ENAME
 FROM EMPLOYEE
 WHERE LENGTH(ENAME)=5;
 ~~~ 
 
-4.Display the names of employees whose name have second alphabet
+### 4.Display the names of employees whose name have second alphabet.
 A in their names.
 ~~~sql
 SELECT ENAME
@@ -35,7 +34,7 @@ FROM EMPLOYEE
 WHERE ENAME LIKE '_A%';
 ~~~
 
-5.Display the names of employees who are not working as salesman
+### 5.Display the names of employees who are not working as salesman.
 or clerk or analyst.
 ~~~sql
 SELECT ENAME
@@ -43,7 +42,7 @@ FROM EMPLOYEE
 WHERE JOB NOT IN('CLERK','SALESMAN','ANALYST');
 ~~~
 
-6.Display the name of the employee along with their annual salary
+### 6.Display the name of the employee along with their annuay salary.
 (sal*12).The name of the employee earning highest salary should
 appear first.
 ~~~sql
@@ -52,9 +51,7 @@ FROM EMPLOYEE
 ORDER BY SAL DESC;
 ~~~
 
-7.Display name,sal,hra,pf,da,totalsal for each employee.The output
-should be in the order of total sal,hra 15% of sal,da 10% of sal,pf
-5% of sal.Total salary will be(sal*hra*da)-pf.
+### 7.Display name,sal,hra,pf,da,totalsal for each employee.The output should be in the order of total sal,hra 15% of sal,da 10% of sal,pf 5% of sal.Total salary will be(sal*hra*da)-pf.
 ~~~sql
 SELECT ENAME,
 SAL,
@@ -66,15 +63,14 @@ FROM EMPLOYEE
 ORDER BY TOTAL_SAL;
 ~~~
 
-8.Update the salary of each employee by 10% increment who are not 
-eligible for comission.
+### 8.Update the salary of each employee by 10% increment who are not eligible for comission.
 ~~~sql
 UPDATE EMPLOYEE
 SET SAL = SAL+(SAL * 0.10)
 WHERE COMM IS NULL OR COMM = 0;
 ~~~
 
-9.Display those employees whose salary is more than 3000 after giving 20% increment.
+### 9.Display those employees whose salary is more than 3000 after giving 20% increment.
 ~~~sql
 SELECT ENAME,
 SAL,
@@ -83,7 +79,7 @@ FROM EMPLOYEE
 WHERE (SAL + (SAL*0.20))>3000;
 ~~~
 
-10.Display those employees whose salary contains atleast 3 digits.
+### 10.Display those employees whose salary contains atleast 3 digits.
 ~~~sql
 SELECT ENAME,
 SAL

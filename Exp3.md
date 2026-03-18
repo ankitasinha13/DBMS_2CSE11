@@ -2,15 +2,14 @@
 <h2>Experiment 3</h2>
 <h4>Queries:</h4>
 
-1.List all employees and jobs in department 30 in descending order by salary.
+### 1.List all employees and jobs in department 30 in descending order by salary.
 ~~~sql
 SELECT ENAME,JOB,SAL FROM EMPLOYEE
 WHERE DEPTNO = 30
 ORDER BY SAL DESC;
 ~~~
 
-2.List job and Department Number of employees whose 
-name are five letters long begin with “A” and end
+### 2.List job and Department Number of employees whose name are five letters long begin with “A” and end.
  with “N".
  ~~~sql
  SELECT JOB,DEPTNO
@@ -18,24 +17,21 @@ name are five letters long begin with “A” and end
  WHERE ENAME LIKE 'A___N';
  ~~~
 
- 3.Display the name of employees whose name ends with
-  alphabet S.
+### 3.Display the name of employees whose name ends with alphabet S.
 ~~~sql
 SELECT ENAME
 FROM EMPLOYEE
 WHERE ENAME LIKE 'S%';
 ~~~
 
-4.Display the names of employees whose name ends with 
-alphabet S.
+### 4.Display the names of employees whose name ends with alphabet S.
 ~~~sql
 SELECT ENAME
 FROM EMPLOYEE
 WHERE ENAME LIKE '%S';
 ~~~
 
-5.Display the names of employees working in 
-department number 10 or 20 or 40 or employees
+### 5.Display the names of employees working in department number 10 or 20 or 40 or employees.
  working
  as clerks,salesman or analyst.
  ~~~sql
@@ -45,28 +41,25 @@ department number 10 or 20 or 40 or employees
  OR JOB IN('CLERK','SALESMAN','ANALYST');
  ~~~
 
- 6.Display employee number and names for employees
-  who earn commission.
+### 6.Display employee number and names for employees who earn commission.
   ~~~sql
   SELECT EMPNO,ENAME
   FROM EMPLOYEE
   WHERE COMM IS NOT NULL;
   ~~~
 
-  7.Display employee number and total salary for 
-  each employee.
+### 7.Display employee number and total salary for each employee.
   ~~~sql
   SELECT EMPNO,(SAL+IFNULL(COMM,0)) AS TOTAL_SALARY FROM EMPLOYEE;
   ~~~
 
-  8.Display employee number and annual salary for each 
-   employee.
+### 8.Display employee number and annual salary for each employee.
    ~~~sql
    SELECT EMPNO,SAL*12 AS ANNUAL_SALARY
    FROM EMPLOYEE;
    ~~~ 
 
-9.Display the names of all employees working as clerks and drawing a salary more than 3,000.
+### 9.Display the names of all employees working as clerks and drawing a salary more than 3,000.
 ~~~sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -74,7 +67,7 @@ WHERE SAL>3000
 AND JOB = 'CLERK';
 ~~~
  
-10.Display the names of employees who are working as clerk, salesman or analyst and drawing a salary more than 3,000.
+### 10.Display the names of employees who are working as clerk, salesman or analyst and drawing a salary more than 3,000.
 ~~~sql
 SELECT ENAME
 FROM EMPLOYEE
